@@ -19,8 +19,8 @@ const TodoListContainer = connect(
 */
 
 function TodoListContainer() {
-  const todo = useSelector((state) => state.todo);
-  return <TodoList todoList={todo.todoList} />;
+  const todoState = useSelector((state) => state.todo);
+  return <TodoList todoList={todoState.todoList} />;
 }
 
 export default TodoListContainer;
